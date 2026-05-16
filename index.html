@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madhumitha B - AI & Data Science Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
             --bg: #040810;
@@ -37,7 +40,13 @@
             position: relative;
         }
 
-        h1, h2, h3, h4, h5, h6, .brand {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .brand {
             font-family: 'Orbitron', sans-serif;
             letter-spacing: 1px;
         }
@@ -60,16 +69,45 @@
             z-index: -1;
             pointer-events: none;
         }
-        .orbit-1 { width: 600px; height: 600px; top: 10%; left: -10%; animation: spin 40s linear infinite; }
-        .orbit-2 { width: 1000px; height: 1000px; bottom: -20%; right: -10%; border-color: rgba(0, 245, 255, 0.03); animation: spin 60s linear infinite reverse; }
 
-        @keyframes spin { 100% { transform: rotate(360deg); } }
+        .orbit-1 {
+            width: 600px;
+            height: 600px;
+            top: 10%;
+            left: -10%;
+            animation: spin 40s linear infinite;
+        }
+
+        .orbit-2 {
+            width: 1000px;
+            height: 1000px;
+            bottom: -20%;
+            right: -10%;
+            border-color: rgba(0, 245, 255, 0.03);
+            animation: spin 60s linear infinite reverse;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
         /* Typography & Utilities */
-        .text-cyan { color: var(--accent-cyan); text-shadow: var(--glow-cyan); }
-        .text-violet { color: var(--accent-violet); text-shadow: var(--glow-violet); }
-        .glow-text { text-shadow: 0 0 10px rgba(240, 248, 255, 0.3); }
-        
+        .text-cyan {
+            color: var(--accent-cyan);
+            text-shadow: var(--glow-cyan);
+        }
+
+        .text-violet {
+            color: var(--accent-violet);
+            text-shadow: var(--glow-violet);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px rgba(240, 248, 255, 0.3);
+        }
+
         .section-title {
             font-size: 2.5rem;
             text-align: center;
@@ -121,14 +159,14 @@
             left: -100%;
             width: 50%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
             transform: skewX(-20deg);
             transition: 0.5s;
         }
 
         .glass-card:hover {
             transform: translateY(-12px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.5), var(--glow-cyan);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), var(--glow-cyan);
             border-color: var(--accent-cyan);
         }
 
@@ -161,8 +199,10 @@
             align-items: center;
             gap: 10px;
         }
-        
-        .brand span { color: var(--accent-cyan); }
+
+        .brand span {
+            color: var(--accent-cyan);
+        }
 
         .nav-links {
             display: flex;
@@ -232,20 +272,92 @@
 
         /* Animations */
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
         }
 
-        @keyframes float-random-1 { 0% { transform: translate(0, 0) rotate(0deg); } 33% { transform: translate(10px, -15px) rotate(2deg); } 66% { transform: translate(-5px, -25px) rotate(-1deg); } 100% { transform: translate(0, 0) rotate(0deg); } }
-        @keyframes float-random-2 { 0% { transform: translate(0, 0) rotate(0deg); } 33% { transform: translate(-12px, -20px) rotate(-2deg); } 66% { transform: translate(8px, -10px) rotate(1deg); } 100% { transform: translate(0, 0) rotate(0deg); } }
-        @keyframes float-random-3 { 0% { transform: translate(0, 0) rotate(0deg); } 33% { transform: translate(15px, 10px) rotate(1deg); } 66% { transform: translate(-10px, 20px) rotate(-2deg); } 100% { transform: translate(0, 0) rotate(0deg); } }
+        @keyframes float-random-1 {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
 
-        .float-anim { animation: float 6s ease-in-out infinite; }
-        .float-anim-delay { animation: float 7s ease-in-out infinite 2s; }
-        .float-1 { animation: float-random-1 8s ease-in-out infinite; }
-        .float-2 { animation: float-random-2 9s ease-in-out infinite; }
-        .float-3 { animation: float-random-3 10s ease-in-out infinite; }
+            33% {
+                transform: translate(10px, -15px) rotate(2deg);
+            }
+
+            66% {
+                transform: translate(-5px, -25px) rotate(-1deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        @keyframes float-random-2 {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(-12px, -20px) rotate(-2deg);
+            }
+
+            66% {
+                transform: translate(8px, -10px) rotate(1deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        @keyframes float-random-3 {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(15px, 10px) rotate(1deg);
+            }
+
+            66% {
+                transform: translate(-10px, 20px) rotate(-2deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .float-anim-delay {
+            animation: float 7s ease-in-out infinite 2s;
+        }
+
+        .float-1 {
+            animation: float-random-1 8s ease-in-out infinite;
+        }
+
+        .float-2 {
+            animation: float-random-2 9s ease-in-out infinite;
+        }
+
+        .float-3 {
+            animation: float-random-3 10s ease-in-out infinite;
+        }
 
         .hidden-scroll {
             opacity: 0;
@@ -298,14 +410,14 @@
 
         .tech-badge {
             padding: 0.5rem 1.2rem;
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             font-size: 0.85rem;
             color: var(--text-primary);
             backdrop-filter: blur(5px);
             font-family: 'Orbitron', sans-serif;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         .hero-cta {
@@ -374,10 +486,10 @@
         }
 
         .skill-category {
-            background: rgba(255,255,255,0.01);
+            background: rgba(255, 255, 255, 0.01);
             border-radius: 20px;
             padding: 2rem;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .category-title {
@@ -600,7 +712,7 @@
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
             color: var(--text-primary);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 0.5rem;
             display: inline-block;
         }
@@ -649,18 +761,18 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1), rgba(0,0,0,0.5));
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
             border: 1px solid var(--border);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-shadow: inset -10px -10px 20px rgba(0,0,0,0.5), 0 0 15px rgba(0,245,255,0.1);
+            box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 245, 255, 0.1);
             transition: all 0.4s;
         }
 
         .lang-orb:hover {
-            box-shadow: inset -10px -10px 20px rgba(0,0,0,0.5), var(--glow-cyan);
+            box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5), var(--glow-cyan);
             transform: translateY(-10px);
         }
 
@@ -679,7 +791,7 @@
         .learning-pulse {
             animation: pulse-glow 2s infinite;
             border-color: var(--accent-violet);
-            box-shadow: inset -10px -10px 20px rgba(0,0,0,0.5), 0 0 15px rgba(139,92,246,0.2);
+            box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(139, 92, 246, 0.2);
         }
 
         .learning-pulse .lang-level {
@@ -687,9 +799,17 @@
         }
 
         @keyframes pulse-glow {
-            0% { box-shadow: 0 0 5px rgba(139,92,246,0.2); }
-            50% { box-shadow: 0 0 20px rgba(139,92,246,0.6); }
-            100% { box-shadow: 0 0 5px rgba(139,92,246,0.2); }
+            0% {
+                box-shadow: 0 0 5px rgba(139, 92, 246, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+            }
+
+            100% {
+                box-shadow: 0 0 5px rgba(139, 92, 246, 0.2);
+            }
         }
 
         /* Contact Section */
@@ -777,7 +897,7 @@
         footer {
             text-align: center;
             padding: 2rem 0;
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             margin-top: 5rem;
             color: var(--text-muted);
             font-size: 0.9rem;
@@ -785,20 +905,55 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .about-grid { grid-template-columns: 1fr; }
-            .nav-links { display: none; } /* Mobile menu simplified */
-            .hero-title { font-size: 2.5rem; }
-            .hero-cta { flex-direction: column; padding: 0 2rem; }
-            .timeline::before { left: 15px; }
-            .timeline-dot { left: 6px; }
-            .timeline-item { padding-left: 45px; }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            /* Mobile menu simplified */
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                padding: 0 2rem;
+            }
+
+            .timeline::before {
+                left: 15px;
+            }
+
+            .timeline-dot {
+                left: 6px;
+            }
+
+            .timeline-item {
+                padding-left: 45px;
+            }
+        }
+
+        /* Disable floating animations as requested */
+        .float-1,
+        .float-2,
+        .float-3,
+        .float-anim,
+        .float-anim-delay,
+        .lang-orb,
+        .learning-pulse {
+            animation: none !important;
+            transform: none !important;
         }
     </style>
 </head>
+
 <body>
 
     <canvas id="canvas-container"></canvas>
-    
+
     <div class="bg-orbit orbit-1"></div>
     <div class="bg-orbit orbit-2"></div>
 
@@ -817,7 +972,7 @@
         <div class="hero-content hidden-scroll">
             <h1 class="hero-title text-cyan glow-text">MADHUMITHA B</h1>
             <h2 class="hero-subtitle">AI & Data Science Engineer | Building Intelligent Systems</h2>
-            
+
             <div class="hero-badges">
                 <span class="tech-badge float-1">Python</span>
                 <span class="tech-badge float-2">Deep Learning</span>
@@ -825,25 +980,31 @@
                 <span class="tech-badge float-1">RAG</span>
                 <span class="tech-badge float-2">Computer Vision</span>
             </div>
-            
+
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="resume.pdf" target="_blank" download="Madhumitha_B_Resume.pdf" class="btn btn-secondary">Download Resume</a>
+                <a href="resume.pdf" target="_blank" download="Madhumitha_B_Resume.pdf"
+                    class="btn btn-secondary">Download Resume</a>
             </div>
         </div>
     </section>
 
     <section id="about" class="container">
         <h2 class="section-title text-violet">About Sequence</h2>
-        
+
         <div class="about-grid hidden-scroll">
             <div class="about-text glass-card float-anim">
-                <p>Hello! I'm a <span class="about-highlight">Final-year B.Tech student in Artificial Intelligence & Data Science</span> at Rajalakshmi Institute of Technology (RIT), Chennai.</p>
-                <p>My academic journey is marked by a <span class="about-highlight">CGPA of 8.5</span>, and I've been actively involved in research as an <span class="about-highlight">IEEE Published Author</span>.</p>
-                <p>I've honed my practical skills as a <span class="about-highlight">2x AI/ML Intern at IITM Research Park</span> and hold a <span class="about-highlight">Copyright Registered AI Web Scraping Chatbot</span> recognized by the Govt. of India.</p>
-                <p>I'm deeply passionate about solving complex real-world problems using state-of-the-art AI, computer vision, and language models.</p>
+                <p>Hello! I'm a <span class="about-highlight">Final-year B.Tech student in Artificial Intelligence &
+                        Data Science</span> at Rajalakshmi Institute of Technology (RIT), Chennai.</p>
+                <p>My academic journey is marked by a <span class="about-highlight">CGPA of 8.5</span>, and I've been
+                    actively involved in research as an <span class="about-highlight">IEEE Published Author</span>.</p>
+                <p>I've honed my practical skills as a <span class="about-highlight">2x AI/ML Intern at IITM Research
+                        Park</span> and hold a <span class="about-highlight">Copyright Registered AI Web Scraping
+                        Chatbot</span> recognized by the Govt. of India.</p>
+                <p>I'm deeply passionate about solving complex real-world problems using state-of-the-art AI, computer
+                    vision, and language models.</p>
             </div>
-            
+
             <div class="stats-grid">
                 <div class="stat-card glass-card float-1">
                     <span class="stat-value">2</span>
@@ -867,7 +1028,7 @@
 
     <section id="skills" class="container">
         <h2 class="section-title text-cyan">Technical Arsenal</h2>
-        
+
         <div class="skills-container hidden-scroll">
             <div class="skill-category glass-card float-anim">
                 <h3 class="category-title"><i class="fa-solid fa-code"></i> Languages</h3>
@@ -925,7 +1086,7 @@
 
     <section id="projects" class="container">
         <h2 class="section-title text-violet">Mission Logs</h2>
-        
+
         <div class="projects-grid hidden-scroll">
             <div class="project-card glass-card float-1">
                 <h3 class="project-title">Dual Hand Sign Language Recognition</h3>
@@ -934,7 +1095,8 @@
                     <span class="tag">CNN</span>
                     <span class="tag">Computer Vision</span>
                 </div>
-                <p class="project-desc">Real-time gesture detection system achieving 95%+ accuracy. Designed to bridge the communication gap for speech and hearing-impaired individuals.</p>
+                <p class="project-desc">Real-time gesture detection system achieving 95%+ accuracy. Designed to bridge
+                    the communication gap for speech and hearing-impaired individuals.</p>
                 <div class="project-links">
                     <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
                 </div>
@@ -947,10 +1109,13 @@
                     <span class="tag">Qdrant</span>
                     <span class="tag">FastAPI</span>
                 </div>
-                <p class="project-desc">A Multi-document Q&A system leveraging semantic search with vector embeddings. Deployed on Render and Vercel.</p>
+                <p class="project-desc">A Multi-document Q&A system leveraging semantic search with vector embeddings.
+                    Deployed on Render and Vercel.</p>
                 <div class="project-links">
-                    <a href="https://github.com/madhumithab6825/Neurosphere" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
-                    <a href="https://neurosphere-5o68-8qq9rolvp-madhumithab6825s-projects.vercel.app/" target="_blank" class="project-link"><i class="fa-solid fa-external-link"></i> Live App</a>
+                    <a href="https://github.com/madhumithab6825/Neurosphere" target="_blank" class="project-link"><i
+                            class="fa-brands fa-github"></i> Source</a>
+                    <a href="https://neurosphere-5o68-8qq9rolvp-madhumithab6825s-projects.vercel.app/" target="_blank"
+                        class="project-link"><i class="fa-solid fa-external-link"></i> Live App</a>
                 </div>
             </div>
 
@@ -960,7 +1125,8 @@
                     <span class="tag">Conversational AI</span>
                     <span class="tag">Web Scraping</span>
                 </div>
-                <p class="project-desc">Automated intelligent data extraction with a conversational AI interface. Officially Copyright Registered by the Government of India.</p>
+                <p class="project-desc">Automated intelligent data extraction with a conversational AI interface.
+                    Officially Copyright Registered by the Government of India.</p>
                 <div class="project-links">
                     <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
                 </div>
@@ -973,9 +1139,11 @@
                     <span class="tag">EfficientNet</span>
                     <span class="tag">OpenCV</span>
                 </div>
-                <p class="project-desc">End-to-end AI-powered steel surface defect detection. Features include annotation, data augmentation, custom model training, and real-time detection.</p>
+                <p class="project-desc">End-to-end AI-powered steel surface defect detection. Features include
+                    annotation, data augmentation, custom model training, and real-time detection.</p>
                 <div class="project-links">
-                    <a href="https://github.com/madhumithab6825/Steel-Surface-Defect-Detection" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+                    <a href="https://github.com/madhumithab6825/Steel-Surface-Defect-Detection" target="_blank"
+                        class="project-link"><i class="fa-brands fa-github"></i> Source</a>
                 </div>
             </div>
         </div>
@@ -983,13 +1151,13 @@
 
     <section id="experience" class="container">
         <h2 class="section-title text-cyan">Flight Timeline</h2>
-        
+
         <div class="timeline hidden-scroll">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content glass-card float-anim">
                     <h3 class="timeline-title">AI/ML Intern</h3>
-                    <p class="timeline-date">alfaTKG, IITM Research Park | 2024</p>
+                    <p class="timeline-date">alfaTKG, IITM Research Park | 2026</p>
                     <div class="timeline-desc">
                         <ul>
                             <li>Built a RAG chatbot using LangChain, FastAPI, and Qdrant</li>
@@ -1004,7 +1172,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content glass-card float-anim-delay">
                     <h3 class="timeline-title">AI/ML Intern</h3>
-                    <p class="timeline-date">Plugzmart, IITM Research Park | 2023</p>
+                    <p class="timeline-date">Plugzmart, IITM Research Park | 2025</p>
                     <div class="timeline-desc">
                         <ul>
                             <li>Developed an intelligent EV charging station chatbot</li>
@@ -1018,7 +1186,7 @@
 
     <section id="achievements" class="container">
         <h2 class="section-title text-violet">Orbital Milestones</h2>
-        
+
         <div class="achievements-grid hidden-scroll">
             <div class="achievement-card float-1">
                 <i class="fa-solid fa-crown achievement-icon"></i>
@@ -1028,11 +1196,13 @@
                 <i class="fa-solid fa-hand-holding-heart achievement-icon"></i>
                 <p class="achievement-text">Vice President — Social Service Club, RIT</p>
             </div>
-            <a href="https://lnkd.in/gdHD-84T" target="_blank" style="text-decoration: none; color: inherit;" class="achievement-card float-3">
+            <a href="https://lnkd.in/gdHD-84T" target="_blank" style="text-decoration: none; color: inherit;"
+                class="achievement-card float-3">
                 <i class="fa-solid fa-book-open achievement-icon"></i>
                 <p class="achievement-text">IEEE Published Paper (2025)</p>
             </a>
-            <a href="copyright - Copy.png" target="_blank" style="text-decoration: none; color: inherit;" class="achievement-card float-1">
+            <a href="copyright - Copy.png" target="_blank" style="text-decoration: none; color: inherit;"
+                class="achievement-card float-1">
                 <i class="fa-solid fa-stamp achievement-icon"></i>
                 <p class="achievement-text">Copyright Registered AI Chatbot (Govt. of India)</p>
             </a>
@@ -1042,31 +1212,34 @@
 
     <section id="certifications" class="container">
         <h2 class="section-title text-cyan">Authorized Access Codes</h2>
-        
+
         <div class="cert-group hidden-scroll">
             <h3 class="cert-group-title">Cloud & AI (Google)</h3>
             <div class="cert-grid">
-                <div class="cert-card glass-card float-1">
-                    <img src="google_generative_ai.png" alt="Generative AI" style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
+                <a href="google_generative_ai.png" target="_blank" class="cert-card glass-card float-1" style="text-decoration: none; color: inherit;">
+                    <img src="google_generative_ai.png" alt="Generative AI"
+                        style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
                     <div class="cert-info">
                         <h4>Intro to Generative AI</h4>
                         <p>Google Cloud</p>
                     </div>
-                </div>
-                <div class="cert-card glass-card float-2">
-                    <img src="google_responsible_ai.png" alt="Responsible AI" style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
+                </a>
+                <a href="google_responsible_ai.png" target="_blank" class="cert-card glass-card float-2" style="text-decoration: none; color: inherit;">
+                    <img src="google_responsible_ai.png" alt="Responsible AI"
+                        style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
                     <div class="cert-info">
                         <h4>Responsible AI</h4>
                         <p>Google Cloud</p>
                     </div>
-                </div>
-                <div class="cert-card glass-card float-3">
-                    <img src="google_llm.png" alt="Large Language Models" style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
+                </a>
+                <a href="google_llm.png" target="_blank" class="cert-card glass-card float-3" style="text-decoration: none; color: inherit;">
+                    <img src="google_llm.png" alt="Large Language Models"
+                        style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
                     <div class="cert-info">
                         <h4>Large Language Models (LLMs)</h4>
                         <p>Google Cloud</p>
                     </div>
-                </div>
+                </a>
                 <div class="cert-card glass-card float-1">
                     <i class="fa-solid fa-medal cert-icon"></i>
                     <div class="cert-info">
@@ -1080,15 +1253,19 @@
         <div class="cert-group hidden-scroll">
             <h3 class="cert-group-title">Databases & Analytics</h3>
             <div class="cert-grid">
-                <a href="mongodb.png" target="_blank" class="cert-card glass-card float-2" style="text-decoration: none; color: inherit;">
-                    <img src="mongodb.png" alt="MongoDB" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+                <a href="mongodb.png" target="_blank" class="cert-card glass-card float-2"
+                    style="text-decoration: none; color: inherit;">
+                    <img src="mongodb.png" alt="MongoDB"
+                        style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
                     <div class="cert-info">
                         <h4>MongoDB Certified</h4>
                         <p>MongoDB</p>
                     </div>
                 </a>
-                <a href="nptel_r.png" target="_blank" class="cert-card glass-card float-3" style="text-decoration: none; color: inherit;">
-                    <img src="nptel_r.png" alt="NPTEL R" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+                <a href="nptel_r.png" target="_blank" class="cert-card glass-card float-3"
+                    style="text-decoration: none; color: inherit;">
+                    <img src="nptel_r.png" alt="NPTEL R"
+                        style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
                     <div class="cert-info">
                         <h4>R for Data Analytics</h4>
                         <p>NPTEL | IIT Kanpur</p>
@@ -1100,15 +1277,19 @@
         <div class="cert-group hidden-scroll">
             <h3 class="cert-group-title">HackerRank</h3>
             <div class="cert-grid">
-                <a href="hackerrank_python.png" target="_blank" class="cert-card glass-card float-1" style="text-decoration: none; color: inherit;">
-                    <img src="hackerrank_python.png" alt="Python" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+                <a href="hackerrank_python.png" target="_blank" class="cert-card glass-card float-1"
+                    style="text-decoration: none; color: inherit;">
+                    <img src="hackerrank_python.png" alt="Python"
+                        style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
                     <div class="cert-info">
                         <h4>Python</h4>
                         <p>HackerRank</p>
                     </div>
                 </a>
-                <a href="hackerrank_problem_solving.png" target="_blank" class="cert-card glass-card float-2" style="text-decoration: none; color: inherit;">
-                    <img src="hackerrank_problem_solving.png" alt="Problem Solving" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+                <a href="hackerrank_problem_solving.png" target="_blank" class="cert-card glass-card float-2"
+                    style="text-decoration: none; color: inherit;">
+                    <img src="hackerrank_problem_solving.png" alt="Problem Solving"
+                        style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
                     <div class="cert-info">
                         <h4>Problem Solving</h4>
                         <p>HackerRank</p>
@@ -1120,8 +1301,10 @@
         <div class="cert-group hidden-scroll">
             <h3 class="cert-group-title">Microsoft Learn</h3>
             <div class="cert-grid">
-                <a href="ms_learning.png" target="_blank" class="cert-card glass-card float-1" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="ms_learning.png" alt="Microsoft Learning Modules" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; object-fit: contain; max-height: 200px;">
+                <a href="ms_learning.png" target="_blank" class="cert-card glass-card float-1"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <img src="ms_learning.png" alt="Microsoft Learning Modules"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem; object-fit: contain; max-height: 200px;">
                     <div class="cert-info">
                         <h4>Data Analysis, Power BI, Azure ML & Generative AI</h4>
                         <p>Microsoft</p>
@@ -1133,7 +1316,7 @@
 
     <section id="languages" class="container">
         <h2 class="section-title text-violet">Communication Protocols</h2>
-        
+
         <div class="languages-container hidden-scroll">
             <div class="lang-orb float-2">
                 <span class="lang-name">English</span>
@@ -1152,19 +1335,24 @@
 
     <section id="contact" class="container">
         <h2 class="section-title text-cyan">Establish Connection</h2>
-        
+
         <div class="contact-content hidden-scroll">
             <p class="contact-text">Open to full-time AI/ML roles & collaborations. Let's build the future together.</p>
-            
+
             <div class="social-orbs">
-                <a href="https://www.linkedin.com/in/madhumitha-b-aab107291/" target="_blank" class="social-orb float-1"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/madhumithab6825/" target="_blank" class="social-orb float-2"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:madhumithamalu6@gmail.com" class="social-orb float-3"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/madhumitha-b-aab107291/" target="_blank"
+                    class="social-orb float-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/madhumithab6825/" target="_blank" class="social-orb float-2"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:madhumithamalu6@gmail.com" class="social-orb float-3"><i
+                        class="fa-solid fa-envelope"></i></a>
             </div>
-            
-            <form action="https://formsubmit.co/madhumithamalu6@gmail.com" method="POST" class="contact-form float-anim">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://madhumithab6825.github.io/">
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form float-anim">
+                <!-- Replace YOUR_ACCESS_KEY_HERE with the key you get from web3forms.com -->
+                <input type="hidden" name="access_key" value="26392436-4f00-4b92-9aad-bc86580e2e29">
+                <input type="hidden" name="redirect" value="https://madhumithab6825.github.io/">
+                <input type="hidden" name="subject" value="New Portfolio Contact Submission">
                 <input type="text" name="Name" placeholder="Your Name" required class="form-control">
                 <input type="email" name="Email" placeholder="Your Email" required class="form-control">
                 <input type="text" name="Reg" placeholder="Registration Number" required class="form-control">
@@ -1182,12 +1370,12 @@
         // Particle Background
         const canvas = document.getElementById('canvas-container');
         const ctx = canvas.getContext('2d');
-        
+
         let width = canvas.width = window.innerWidth;
         let height = canvas.height = window.innerHeight;
-        
+
         const particles = [];
-        
+
         class Particle {
             constructor() {
                 this.x = Math.random() * width;
@@ -1197,7 +1385,7 @@
                 this.opacity = Math.random() * 0.5 + 0.1;
                 this.color = Math.random() > 0.5 ? '#00F5FF' : '#8B5CF6';
             }
-            
+
             update() {
                 this.y -= this.speedY;
                 if (this.y < 0) {
@@ -1205,7 +1393,7 @@
                     this.x = Math.random() * width;
                 }
             }
-            
+
             draw() {
                 ctx.globalAlpha = this.opacity;
                 ctx.fillStyle = this.color;
@@ -1214,7 +1402,7 @@
                 ctx.fill();
             }
         }
-        
+
         function initParticles() {
             particles.length = 0;
             const numParticles = Math.floor(window.innerWidth / 10);
@@ -1222,37 +1410,28 @@
                 particles.push(new Particle());
             }
         }
-        
+
         function animateParticles() {
             ctx.clearRect(0, 0, width, height);
-            
+
             particles.forEach(p => {
                 p.update();
                 p.draw();
             });
-            
+
             requestAnimationFrame(animateParticles);
         }
-        
+
         window.addEventListener('resize', () => {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
             initParticles();
         });
-        
+
         initParticles();
         animateParticles();
 
-        // Mouse Parallax Effect
-        document.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 20;
-            const y = (e.clientY / window.innerHeight - 0.5) * 20;
-            
-            document.querySelectorAll('.glass-card').forEach(card => {
-                const depth = parseFloat(card.getAttribute('data-depth')) || 1;
-                card.style.transform = `translate(${x * depth}px, ${y * depth}px)`;
-            });
-        });
+        // Mouse Parallax Effect removed as requested
 
         // Intersection Observer for scroll animations
         const observer = new IntersectionObserver((entries) => {
@@ -1281,4 +1460,5 @@
         });
     </script>
 </body>
+
 </html>
