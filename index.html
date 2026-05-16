@@ -734,6 +734,46 @@
             transform: translateY(-10px) scale(1.1);
         }
 
+        /* Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-form .btn {
+            width: 100%;
+            margin-top: 1rem;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -1122,7 +1162,15 @@
                 <a href="mailto:madhumithamalu6@gmail.com" class="social-orb float-3"><i class="fa-solid fa-envelope"></i></a>
             </div>
             
-            <a href="mailto:madhumithamalu6@gmail.com" class="btn btn-primary float-anim">Send Transmission</a>
+            <form action="https://formsubmit.co/madhumithamalu6@gmail.com" method="POST" class="contact-form float-anim">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://madhumithab6825.github.io/">
+                <input type="text" name="Name" placeholder="Your Name" required class="form-control">
+                <input type="email" name="Email" placeholder="Your Email" required class="form-control">
+                <input type="text" name="Reg" placeholder="Registration Number" required class="form-control">
+                <textarea name="Message" placeholder="Your Message" required class="form-control" rows="4"></textarea>
+                <button type="submit" class="btn btn-primary">Contact Me</button>
+            </form>
         </div>
     </section>
 
